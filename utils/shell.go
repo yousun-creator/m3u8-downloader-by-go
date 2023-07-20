@@ -10,7 +10,7 @@ import (
 )
 
 func ExecUnixShell(s string) error {
-	cmd := exec.Command("/bin/bash", "-c", s)
+	cmd := exec.Command("/bin/sh", "-c", s)
 	var out bytes.Buffer
 	cmd.Stdout = &out
 	err := cmd.Run()
