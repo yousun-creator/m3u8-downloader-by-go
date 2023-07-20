@@ -110,14 +110,14 @@ func TestFileAbs(t *testing.T) {
 			args: args{
 				path: "../file.go",
 			},
-			want: "m3u8-downloader/file.go",
+			want: "m3u8-downloader-by-go/file.go",
 		},
 		{
 			name: "exist such file abc",
 			args: args{
 				path: "./../abc",
 			},
-			want: "m3u8-downloader/abc",
+			want: "m3u8-downloader-by-go/abc",
 		},
 	}
 	for _, tt := range tests {
