@@ -73,7 +73,7 @@ func init() {
 	downloadCmd.Flags().IntVarP(&threadNumber, "threadNumber", "n", 10, "the number of download thread.")
 	downloadCmd.Flags().StringArrayVarP(&headers, "header", "H", nil, "custom http header(s), eg. -H 'user-agent: Mozilla/5.0...' -H 'accept: */*' .")
 	downloadCmd.Flags().StringArrayVarP(&cdns, "cdn", "C", nil, "CDN(s) for the download domain, eg. -C 'www.google.com:8.8.8.8' -C 'www.google.com:1.1.1.1' -C 'www.google.com:9.9.9.9' .")
-	downloadCmd.Flags().StringVarP(&logLevel, "logLevel", "l", "Info", "logging level on a Logger,logging levels: Trace, Debug, Info, Warning, Error, Fatal and Panic.")
+	downloadCmd.Flags().StringVarP(&logLevel, "logLevel", "l", "Error", "logging level on a Logger,logging levels: Trace, Debug, Info, Warning, Error, Fatal and Panic.")
 	downloadCmd.Flags().StringVarP(&key, "key", "", "", "custom key to decrypt ts data.")
 	downloadCmd.Flags().StringVarP(&keyFormat, "keyFormat", "", "original", "format of key, format can be those values: original, hex, base64.")
 	downloadCmd.Flags().BoolVarP(&useFFmpeg, "UseFFmpeg", "uf", true, "use FFmpeg for merging TS files.")
